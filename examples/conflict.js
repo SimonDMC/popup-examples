@@ -15,12 +15,16 @@ const popup = new Popup({
     }`,
     loadCallback: () => {
         /* button functionality */
-        document
-            .querySelectorAll(".popup.override button")
-            .forEach((button) => {
-                button.addEventListener("click", () => {
-                    popup.hide();
-                });
-            });
+        document.querySelector(".popup.board button.refuse-override").onclick =
+            () => {
+                popup.hide();
+                // user wants to use local data
+            };
+
+        document.querySelector(".popup.board button.accept-override").onclick =
+            () => {
+                popup.hide();
+                // user wants to use cloud data
+            };
     },
 });
