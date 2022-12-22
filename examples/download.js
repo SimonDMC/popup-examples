@@ -1,7 +1,4 @@
-## JavaScript
-
-```js
-new Popup({
+const popup = new Popup({
     id: "download",
     title: "Download Instructions",
     content: `
@@ -19,8 +16,4 @@ new Popup({
     fontSizeMultiplier: 1.2,
     titleMargin: "4%",
     underlineLinks: true,
-    dynamicHeight: true,
 });
-```
-
-No custom CSS is required for this example.

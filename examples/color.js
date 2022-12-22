@@ -1,7 +1,4 @@
-## JavaScript
-
-```js
-new Popup({
+const popup = new Popup({
     id: "color-info",
     title: "Color Guesser",
     content: `
@@ -16,6 +13,3 @@ new Popup({
     titleMargin: "0",
     backgroundColor: "#ffebfe",
 });
-```
-
-No custom CSS is required for this example.
